@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>K Sindhu • Portfolio</title>
+  <meta name="description" content="K Sindhu — Developer Portfolio with 3D, animations and interactive projects.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Prefers reduced motion support -->
+  <meta name="color-scheme" content="light dark">
+
+  <!-- GSAP + ScrollTrigger -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Three.js -->
+  <script defer src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+
+  <!-- tsParticles -->
+  <script defer src="https://cdn.jsdelivr.net/npm/tsparticles@3.7.1/tsparticles.bundle.min.js"></script>
+
+  <!-- Main JS -->
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header" id="header">
+    <nav class="nav">
+      <a class="brand" href="#home">K Sindhu</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <!--<li><a href="#projects">Projects</a></li>-->
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#contact" class="cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="section hero">
+    <div class="hero-inner">
+      <h1 class="intro-line">
+        <span class="intro-hi">Hi, I'm</span>
+        <span class="intro-name">K Sindhu</span>
+      </h1>
+      <p class="intro-sub">Frontend Developer • Creative Coder</p>
+      <div class="hero-actions">
+       <!-- <a href="#projects" class="btn primary">View Projects</a>-->
+         <!--<a href="#contact" class="btn ghost">Hire Me</a>-->
+      </div>
+      <div class="hero-photo" aria-label="Your photo placeholder"></div>
+    </div>
+   <!-- <div class="hero-scroll">Scroll</div>-->
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        Hello! My name is <strong>K Sindhu</strong>.  
+        I am a student and a fresher. I enjoy creating work that is clear, useful, and creative.  
+        I like to learn new skills and improve my work every day.  
+        When I am not working, I enjoy singing, watching animation movies, making artworks, and doing creative activities.  
+        Thank you for visiting my portfolio.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS & TECHNOLOGIES -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <ul class="skills-list">
+        <li><strong>JavaScript / TypeScript</strong> – Frontend</li>
+        <li><strong>React / Next.js</strong> – Frontend</li>
+        <li><strong>Node.js / Express</strong> – Backend</li>
+        <li><strong>Python / Django</strong> – Backend</li>
+        <li><strong>AWS / Docker</strong> – DevOps</li>
+        <li><strong>UI/UX Design</strong> – Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- INTERNSHIP -->
+  <section id="internship" class="section internship">
+    <div class="container">
+      <h2 class="section-title">Internship Experience</h2>
+      <ul class="internship-list">
+        <li><strong>Frontend Development Intern</strong> – Infosys, Bangalore</li>
+        <li><strong>Full-Stack Development Intern</strong> – Infosys, Bangalore</li>
+        <li><strong>UI/UX Design Intern</strong> – Infosys, Bangalore</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container glass">
+      <h2 class="section-title">Let's Work Together</h2>
+      <p>Ready to bring your ideas to life? Let's discuss your project and create something amazing together.</p>
+      
+      <form id="contactForm" autocomplete="on" novalidate>
+        <div class="field">
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Your Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Say hello…" required></textarea>
+        </div>
+        <button class="btn primary glow" type="submit">Send Message</button>
+      </form>
+
+      <!-- Extra Contact Details -->
+      <div class="contact-details">
+        <p><strong>Email:</strong> <a href="mailto:sindhusindhu28637@gmail.com">sindhusindhu28637@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:9342352730">9342352730</a></p>
+        <p><strong>Location:</strong> Gudiyatham, Tamil Nadu</p>
+      </div>
+
+      <div class="contact-icons">
+        <a class="float-icon" href="mailto:sindhusindhu28637@gmail.com" aria-label="Email">✉️</a>
+        <a class="float-icon" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+        <a class="float-icon" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year"></span> K Sindhu • Built with ❤️</p>
+  </footer>
+</body>
+</html>
