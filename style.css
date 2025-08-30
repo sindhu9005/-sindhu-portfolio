@@ -164,6 +164,22 @@ p, li {
   font-weight: 500;
 }
 
+/* ------------------ Certificates ------------------ */
+.Certificates-list {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.Certificates-list li {
+  background: #e8fffc;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 4px solid var(--primary);
+  font-weight: 500;
+}
+
 /* ------------------ Internship ------------------ */
 .internship-list {
   list-style: none;
@@ -318,3 +334,4 @@ p, li {
     display: block;
   }
 }
+
